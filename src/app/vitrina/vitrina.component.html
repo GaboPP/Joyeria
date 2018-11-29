@@ -1,0 +1,33 @@
+
+<app-navbar></app-navbar>
+<mat-drawer-container class="content-v" autosize>
+        <mat-drawer #drawer class="sidenav" mode="over">
+          <app-sidenav></app-sidenav>
+        </mat-drawer>
+
+<mat-grid-list cols="2" rowHeight="6:2">
+</mat-grid-list>
+<button type="button" mat-button (click)="drawer.toggle()"><mat-icon class="icon-H">drag_indicator</mat-icon></button>
+<header class="c-1 top shadow-sm" id="sect2"><h1>Productos</h1></header>
+
+<div class="container shadow-lg rounded" style="background-color: #fff70039;">
+  <div class="card-columns">
+  <ul *ngFor="let anillo of Anillos;let i = index">  
+    <app-cards [anillo]=anillo [id]=i></app-cards>
+  </ul> 
+  </div>
+</div>
+<br>
+<div class="col-12 subtop shadow">
+    <h1>Top Vendidos!</h1>
+</div>
+<div class="col-12 rectangle">
+</div>
+<div class="card-columns top c-1">
+    <ul *ngFor="let anilloT of Anillos_top">         
+        <app-top [anillo]=anilloT></app-top>
+    </ul>
+</div>
+
+</mat-drawer-container>
+<footer class="c-1 content-v">Developed by:  Gabriel Astorga Baeza</footer>

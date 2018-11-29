@@ -1,0 +1,88 @@
+<!--<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+  <p>What's your favorite animal?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</div>
+
+-->
+<mat-grid-list cols="4" rowHeight="8:2">
+
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+     <div class="border-bottom center fontDS" style="width:100%;">
+       <h1> {{data.nombre}} </h1>
+     </div>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="2" [rowspan]="6" class="anillo">   
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+              <mat-form-field style="width:80%">
+                 <input matInput placeholder="Nombre">
+                </mat-form-field>
+    
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+            <mat-form-field style="width:80%">
+                <input matInput placeholder="N° Teléfono">
+            </mat-form-field>
+
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <form style="width:80%">
+            <mat-form-field style="width:100%">
+              <input matInput placeholder="Email" [formControl]="emailFormControl"
+                     [errorStateMatcher]="matcher">
+           
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </form>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-radio-group style="padding:5px; width:80%">
+        <mat-radio-button value="1" color="primary">Consulta</mat-radio-button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <mat-radio-button value="2" color="primary">Cita</mat-radio-button>
+      </mat-radio-group>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-form-field style="width:80%">
+        <textarea matInput placeholder="Mensaje"></textarea>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+            <mat-form-field style="width:40%">
+              <mat-select placeholder="Medidas">
+                <mat-option value="option">Medidas</mat-option>
+              </mat-select>
+            </mat-form-field>
+            &nbsp; &nbsp;
+            <mat-form-field style="width:40%">
+                <input matInput placeholder="Cantidad" type="number">
+               </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">   
+        <div>
+          <mat-hint style="text-align: justify;font-size: 80%;">Aquí podrás resolver tus dudas acerca de un anillo, o agendar una cita para que tomemos tus medidas y hagamos el anillo ideal para ti.</mat-hint> 
+        </div>
+      </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <button mat-raised-button color="primary">send</button>
+    </mat-grid-tile>
+
+
+
+
+    </mat-grid-list>

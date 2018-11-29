@@ -1,0 +1,26 @@
+.card {
+    max-width: 290px;
+    border: 0 ;
+  }
+.card:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: .1s ease;
+    z-index: 1000;
+}
+
+
+
+  .icon-H{
+    color: gold;
+  }
+  .icon {
+      padding: 0 2%;
+      vertical-align: middle;
+    }
+  
+  .example-header-image {
+    background-image: url('../../assets/images/L4.jpg');
+    background-size: cover;
+  }

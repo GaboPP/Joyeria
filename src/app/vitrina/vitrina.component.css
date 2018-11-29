@@ -1,0 +1,29 @@
+
+.top{
+    background-color: white;
+    font-family: 'Dancing Script', cursive; 
+}
+.subtop{
+    font-family: 'Dancing Script', cursive;    
+    text-align: center;
+    background-color: white;
+    border-bottom-color: palegoldenrod;
+}
+.rectangle{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    height: 10px;
+}
+h1{
+    margin-bottom: 0.05%;
+}
+
+
+
+.sidenav {
+    padding: 20px;
+}
+.content-v{
+    background-color: rgba(255, 242, 65, 0.537);
+}

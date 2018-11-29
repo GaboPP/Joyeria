@@ -1,0 +1,33 @@
+.card {
+    max-width: 400px;
+    border: 0 ;
+  }
+.card:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: .1s ease;
+    z-index: 1000;
+}
+
+.c-1{
+  text-align: center;
+}
+
+
+
+
+  .icon-H{
+    color: rgba(95, 95, 95, 0.721);
+    border: 5px;
+    border-color: black; 
+  }
+  .icon {
+      padding: 0 2%;
+      vertical-align: middle;
+    }
+  
+  .example-header-image {
+    background-image: url('../../assets/images/L4.jpg');
+    background-size: cover;
+  }

@@ -1,0 +1,35 @@
+<h1 class="fontDS c-1">Filtros</h1>
+<div class="rectangle-s"></div>
+<br>
+<div class="col-12">
+        
+    <h3 class="fontDS">Categoría</h3>
+    <mat-form-field>
+    <mat-select placeholder="Selecciona">
+        <mat-option *ngFor="let jew of jews" [value]="jew.value">
+            {{jew.viewValue}}
+        </mat-option>
+    </mat-select>
+    </mat-form-field>   
+
+
+</div>
+<div class="col-12">
+    <h3 class="fontDS">Gramos</h3>
+    <h6>Menor que: </h6>
+    <mat-slider min="0" max="10" step="0.5" value="10" thumbLabel ></mat-slider>
+</div>
+<div class="col-12">
+        
+    <h3 class="fontDS">Orden</h3>
+    <mat-form-field>
+    <mat-select placeholder="Selecciona">
+        <mat-option *ngFor="let opcion of opciones" [value]="opcion.value">
+            {{opcion.viewValue}}
+        </mat-option>
+    </mat-select>
+    </mat-form-field>   
+
+
+</div>
+<div class="rectangle-s"></div>

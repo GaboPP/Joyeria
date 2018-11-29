@@ -1,0 +1,111 @@
+
+.box {
+    background-color: gold;
+    vertical-align: middle;
+    height: auto;    
+    width: auto;
+    border-radius: 100%;
+    padding: 1.5%  1.5%;
+    max-width: 100%;
+    margin: 0;
+}
+.rectangle{
+    background-color: rgba(255, 255, 255, 0.95);
+    vertical-align: middle;
+    padding: .5% .5%;
+    max-width: 15.3%;
+    height: auto;
+    color: black;
+    margin-right: 5%;
+}
+.sub-rectangle{
+    background-color: rgba(228, 196, 16, 0.707);
+    vertical-align: middle;
+    padding: .3% .3%;
+
+}
+.name{
+    max-width: 50%;    
+    max-height: 0.1%;
+    height: 0.1%;
+    margin: 0%;
+    padding: 1%;
+    margin-left: 5%;
+}
+.mgt-1 {
+    background: url('../../assets/images/j1.jpg');
+    background-position: center;
+  }
+.va{
+    vertical-align: bottom;
+}
+.titulo{
+    font-size: 450%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(36, 35, 35, 0.739);
+}
+h1{
+    font-family: 'Dancing Script', cursive;    
+    font-size: 550%;
+}
+h6{
+    
+    font-family: 'Old Standard TT', serif;
+
+}h5{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+
+}
+.hh1{
+    background-color: rgba(240, 255, 255, 0.212);
+}
+.l1{
+    color: white;
+    font-size: 150%;
+}
+
+.perfil{
+    height: 70px;
+    width: 70px;
+}
+.back2{
+    background-color: rgb(243, 234, 180);
+    
+}
+
+#br:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: .1s ease;
+    z-index: 1000;
+  }
+#br:hover{
+  
+    background-color: #0fb9b1;
+    border-color: white;
+    color: white;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 239, 18); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing .9s steps(20, end);
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(238, 255, 0); }
+  }

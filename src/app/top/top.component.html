@@ -1,0 +1,22 @@
+<br>
+<mat-card class="card shadow">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="c-1">{{anillo.nombre}}</mat-card-title>
+      <mat-card-subtitle>medidas disponibles : <span style="color:rgb(88, 88, 88);">{{anillo.medidas}}</span></mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/images/L4.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        gramos: {{anillo.gramo}}
+      </p>
+      <p>
+        precio tentativo: ${{anillo.gramo*27000}} unidad
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button disabled><mat-icon class="icon-H">favorite</mat-icon></button>
+      <button mat-button (click)="openDialog()">Cotizar</button>
+      <button mat-button>Añadir<mat-icon class="icon">add_shopping_cart</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,14 @@
+.c-toolbar{
+    background-color: rgb(246, 189, 31);
+    color: rgb(255, 255, 255) !important;
+}
+h6{
+    font-family: 'Old Standard TT', serif;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.icon {
+    padding: 0 2%;
+    vertical-align: middle;
+  }

@@ -1,0 +1,15 @@
+<mat-toolbar class="sticky-top shadow-sm navbar-custom ">
+  <a href="#ini">JoyeriAs</a>
+  <span class="spacer"></span>
+
+  <mat-icon class="icon">shopping_basket</mat-icon>
+  <a class="a" href="/joyeria" (click)="go_cotizar()">Jewelry</a>  
+
+  <mat-icon class="icon">face</mat-icon>
+  <a href="#about">Sobre Nosotros</a>
+
+  <mat-icon class="icon">vertical_split</mat-icon>
+  <a href="#cli">Clientes</a>
+
+  <mat-icon matBadge="{{count}}" matBadgeColor="primary" class="icon" [matBadgeHidden]="!visible">shopping_cart<a href="#cli"></a></mat-icon>
+</mat-toolbar>

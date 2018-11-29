@@ -1,0 +1,21 @@
+.icon {
+    padding: 0 2%;
+  }
+  
+.spacer {
+    flex: 1 1 auto;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
+a:hover{
+    color: rgb(181, 182, 141);
+}
+.navbb{
+    background-color: rgba(255, 255, 255, 0.809);
+}
+.a:hover{
+    color: rgb(181, 182, 141);
+
+}

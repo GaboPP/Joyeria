@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "assets/crow.css";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Old+Standard+TT');
+
+
+
+body{
+    margin: 0%;
+    background-color: gold;
+}
+
+.c-1{
+    text-align: center;
+  }
+  
+.fontDS{
+   
+    font-family: 'Dancing Script', cursive; 
+}
+.center{
+    align-items: center;
+    text-align: center;
+   }
+   
